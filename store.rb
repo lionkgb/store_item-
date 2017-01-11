@@ -30,10 +30,14 @@ class Store
   end
 
   def info 
-  	"An #{names} with the #{color} color , costs #{price} "
+  	"a/an #{names} with the #{color} color , costs #{price} "
   end
 end 
 
-store = Store.new( "Orange" , "Orange", "300 Rwf")
-puts store.info 
+product1 = Store.new( "Orange" , "Orange", "300 Rwf")
+product2 = Store.new( "Avocado", "Green", "100 Rwf")
+product3 = Store.new( "Mango", "Yellow", "200 Rwf")
+puts product1.info
+puts product2.info
+puts product3.info 
 
