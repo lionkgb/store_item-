@@ -1,31 +1,11 @@
 class Store
+
+  attr_reader :names , :color , :price 
+  attr_writer :names , :color , :price 
+
   def initialize(input_name, input_color, input_price)
     @names = input_name
     @color = input_color 
-    @price = input_price
-  end
-
-  def names 
-    @names
-  end
-
-  def names= (input_name)
-  	@names = input_name
-  end
-
-  def color
-    @color
-  end
-
-  def color= (input_color)
-    @color = input_color
-  end
-
-  def price 
-    @price 
-  end
-
-  def price= (input_price)
     @price = input_price
   end
 
@@ -40,4 +20,7 @@ product3 = Store.new( "Mango", "Yellow", "200 Rwf")
 puts product1.info
 puts product2.info
 puts product3.info 
+product1.names = "Papaya"
+product1.color = "green" 
+puts product1.info 
 
