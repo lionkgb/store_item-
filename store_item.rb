@@ -12,11 +12,5 @@ item3 = {"names" =>'Banana', "color" => 'Yellow', "price" => '150 RWf'}
 
 puts "the price of the banana is #{item3["price"]}"
 
-#Using class method
-class Store
 
-  def initialize = (names, color, price)
-    @names = names
-    @color = color 
-    @price = price  
-end 
+
